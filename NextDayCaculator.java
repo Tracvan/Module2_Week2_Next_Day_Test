@@ -1,6 +1,7 @@
 public  class NextDayCaculator {
     public static String showNextDay(int ngay, int thang, int nam){
-        if(ngay==31) {
+        int CUOITHANG =31;
+        if(ngay==CUOITHANG) {
             ngay = 1;
             thang += 1;
         }else {
