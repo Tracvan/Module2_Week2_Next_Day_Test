@@ -13,6 +13,13 @@ public  class NextDayCaculator {
         }
         return isLeapYear;
     }
+    public static boolean isEndOfYear(int ngay, int thang){
+        boolean isEndOfYear = false;
+        if(ngay==31 && thang==12){
+            isEndOfYear = true;
+        }
+        return isEndOfYear;
+    }
     public static String showNextDay(int ngay, int thang, int nam){
         int CUOITHANG =31;
 
@@ -38,6 +45,12 @@ public  class NextDayCaculator {
                 }else {
                     CUOITHANG =28;
                 }
+        }
+        if(isEndOfYear(ngay,thang)){
+            ngay = 1;
+            thang =1;
+            nam +=1;
+            return ngay + "/" + thang + "/" + nam ;
         }
         if(ngay==CUOITHANG) {
             ngay = 1;
