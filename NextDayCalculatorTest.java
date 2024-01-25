@@ -39,4 +39,13 @@ public class NextDayCalculatorTest {
         String result = NextDayCaculator.showNextDay(28, 2, 2018);
         assertEquals(expected, result);
     }
+    @Test
+    public void testNgay29Thang2Nam2020(){
+        int day = 29;
+        int thang = 2;
+        int nam = 2020;
+        String expected = "1/3/2020";
+        String result = NextDayCaculator.showNextDay(29, 2, 2020);
+        assertEquals(expected, result);
+    }
 }
