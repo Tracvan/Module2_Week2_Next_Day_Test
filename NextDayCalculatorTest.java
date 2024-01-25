@@ -21,4 +21,13 @@ public class NextDayCalculatorTest {
         String result = NextDayCaculator.showNextDay(31, 1, 2018);
         assertEquals(expected, result);
     }
+    @Test
+    public void testNgay30Thang4Nam2018(){
+        int day = 30;
+        int thang = 4;
+        int nam = 2018;
+        String expected = "1/5/2018";
+        String result = NextDayCaculator.showNextDay(30, 4, 2018);
+        assertEquals(expected, result);
+    }
 }
