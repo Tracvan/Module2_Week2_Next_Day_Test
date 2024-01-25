@@ -17,6 +17,8 @@ public  class NextDayCaculator {
             case 11:
                 CUOITHANG =30;
                 break;
+            case 2:
+                CUOITHANG=28;
         }
         if(ngay==CUOITHANG) {
             ngay = 1;
